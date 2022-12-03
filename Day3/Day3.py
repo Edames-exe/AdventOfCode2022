@@ -58,6 +58,7 @@ priorities = {
 answer = 0
 #get file
 input = open("Day3_input.txt", "r")
+count2 = 0
 #read first lin
 for line in input:
     #split in half
@@ -65,10 +66,18 @@ for line in input:
     string1 = line[:index]
     string2 = line[index:]
     #for each letter in a check each letter in b
+    isfound = False
     for value1 in string1:
         for value2 in string2:
             if value1 == value2:
                 #look at map for value
-                print(value1)
                 answer = answer + priorities[value1]
-print(answer)
+                count2 += 1
+                isfound = True
+                break
+        if isfound == True:
+            break
+
+
+print("answer: ", answer)
+print("number of answers: ", count2)
