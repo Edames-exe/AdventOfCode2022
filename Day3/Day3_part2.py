@@ -58,26 +58,12 @@ priorities = {
 answer = 0
 #get file
 input = open("Day3_input.txt", "r")
-count2 = 0
-#read first lin
-for line in input:
-    #split in half
-    index = int((len(line) -1)/2)
-    string1 = line[:index]
-    string2 = line[index:]
-    #for each letter in a check each letter in b
-    isfound = False
-    for value1 in string1:
-        for value2 in string2:
-            if value1 == value2:
-                #look at map for value
-                answer = answer + priorities[value1]
-                count2 += 1
-                isfound = True
-                break
-        if isfound == True:
+lines = input.readlines()
+for i in range(0, len(lines), 3):
+    for item in lines[i]:
+        if item in lines[i+1] and item in lines[i+2]:
+            answer += priorities[item]
             break
 
 
 print("answer: ", answer)
-print("number of answers: ", count2)
