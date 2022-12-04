@@ -1,5 +1,5 @@
 import os
-os.chdir("d:\Advent_of_code2022\Day2")
+os.chdir("d:\Advent_of_code2022\2022\Day2")
 outcomes = {
     "A X": "Draw",
     "A Y": "Win",
