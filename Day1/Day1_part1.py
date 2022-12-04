@@ -5,7 +5,6 @@ calories = 0
 elves = []
 for line in input:
     if line != "\n":
-        #do stuff
         calories += int(line)
     else:
         elves.append(calories)
