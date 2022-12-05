@@ -1,5 +1,3 @@
-import os
-print(os.getcwd())
 input = open("Day5_input.txt", "r")
 array = []
 i = 1

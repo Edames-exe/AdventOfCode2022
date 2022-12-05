@@ -1,5 +1,3 @@
-import os
-os.chdir("d:\Advent_of_code2022\Year-2022\Day4")
 input = open("Day4_input.txt", "r")
 
 count = 0

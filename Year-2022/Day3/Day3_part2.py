@@ -1,6 +1,3 @@
-import os
-os.chdir("d:\Advent_of_code2022\Day3")
-
 priorities = {
     "a": 1,
     "b": 2,
